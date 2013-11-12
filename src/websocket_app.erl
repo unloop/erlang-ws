@@ -17,7 +17,7 @@ start(_Type, _Args) ->
 				{file, <<"index.html">>},
 				{mimetypes, [{<<".html">>, [<<"text/html">>]}]}
 			]},
-			{"/websocket", ws_handler, []},
+            {"/websocket", ws_handler, []},
 			{"/static/[...]", cowboy_static, [
 				{directory, {priv_dir, websocket, [<<"static">>]}},
 				{mimetypes, [{<<".js">>, [<<"application/javascript">>]}]}
